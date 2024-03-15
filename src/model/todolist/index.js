@@ -44,12 +44,4 @@ UserModel.hasMany(ToDoList, {
     as: 'user_hasMany_todoList'
 })
 
-
-
-//Product.sync({ force: true })
-// update User table if exist without delete
-// await Product.sync({ alter: true });
-// drop and create User table
-// await Product.sync({ force: true });
-// create User table if not exist
 module.exports = ToDoList

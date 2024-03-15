@@ -20,7 +20,6 @@ exports.signIn = async (req, res) => {
     const uUser = await UserModel.update({ token }, { where: { id: user.id } });
     console.log(uUser);
     ;
-    // .redirect('/')
     return res
     .status(200)
     .json({ msg: "OK", user: { ...user.dataValues, token } });

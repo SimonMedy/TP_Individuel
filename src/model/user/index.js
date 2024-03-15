@@ -39,11 +39,5 @@ const User = sequelize.define('User', {
         allowNull: true,
     },
 }, {timestamps: true})
-// User.sync({ force: true })
 
-// update User table if exist without delete
-// await User.sync({ alter: true });
-// drop and create User table
-// await User.sync({ force: true });
-// create User table if not exist
 module.exports = User

@@ -1,4 +1,3 @@
-//npm install sequelize sqlite3
 const { Sequelize } = require("sequelize");
 
 const sequelize = new Sequelize(
